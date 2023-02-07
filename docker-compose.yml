@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  slatedocs:
+    image: slatedocs/slate:v2.13.1
+    volumes:
+      - ./source:/srv/slate/source
+    command: serve
+    ports:
+      - '4567:4567'
